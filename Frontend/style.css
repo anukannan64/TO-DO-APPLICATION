@@ -1,0 +1,121 @@
+body {
+  background-color: #e9f7ef;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.container {
+  background: #fefefe;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #b5d8a6;
+  width: 350px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+input#task_input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1.5px solid #bbb;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input#task_input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+button#add_btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #b0d38a;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#add_btn:hover {
+  background-color: #88b347;
+  color: white;
+}
+
+ul#task_list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 30px;
+  text-align: left;
+}
+
+ul#task_list li {
+  background: #fffbea;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+button.comp_btn {
+  background-color: #0d7813;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-right: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button.comp_btn.marked {
+  background-color: #b32727;
+}
+
+span.task_text {
+  flex-grow: 1;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+span.task_marked {
+  text-decoration: line-through;
+  color: #999;
+}
+
+button.delete_btn {
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #444;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button.delete_btn:hover {
+  background-color: #f44336;
+  color: white;
+}
